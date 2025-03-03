@@ -1,0 +1,619 @@
+class1991,class2000,class2011,male1,smoking2000,smoking2011,drink2000,drink2011,prest00,prest91,prest11
+unemp,unemp,unemp,1,.10416666,1.1730769,.73076922,.23076923,25,25,25
+unemp,unemp,unemp,1.12,6,14,1.4,2.5999999,25,25,25
+labor,unemp,unemp,1,.045454547,0,0,.083333336,25,60,25
+labor,unemp,unemp,1.12,16.25,13,2.1428571,1.8571428,25,60,25
+self emp,unemp,unemp,1,0,0,.33333334,0,25,55,25
+self emp,unemp,unemp,1.12,11.857142,3.375,1.125,.625,25,55,25
+owner,unemp,unemp,1,2.5,0,0,.75,25,75,25
+owner,unemp,unemp,1.12,20,.5,2.5,3.5,25,75,25
+farmer,unemp,unemp,1,1.4761904,.89403975,.49006623,.14569536,25,32,25
+farmer,unemp,unemp,1.12,7.0833335,7.5476189,1.6666666,1.6428572,25,32,25
+student,unemp,unemp,1,0,0,0,0,25,49,25
+student,unemp,unemp,1.12,3,4,0,.5,25,49,25
+retired,unemp,unemp,1.12,0,0,0,0,25,49,25
+,unemp,unemp,1,.72380954,.67521369,.38461539,.05982906,25,,25
+,unemp,unemp,1.12,9.3000002,8.9411764,2.1764705,2.4117646,25,,25
+unemp,unemp,labor,1,0,0,0,0,25,25,60
+unemp,unemp,labor,1.12,10,7,2.6666667,2.6666667,25,25,60
+labor,unemp,labor,1,0,0,0,.5,25,60,60
+labor,unemp,labor,1.12,9,10.375,1.25,3.5,25,60,60
+self emp,unemp,labor,1,0,0,0,0,25,55,60
+farmer,unemp,labor,1,0,0,.625,0,25,32,60
+farmer,unemp,labor,1.12,7.625,17.333334,2.4444444,3.1111112,25,32,60
+student,unemp,labor,1,0,0,0,0,25,49,60
+student,unemp,labor,1.12,6.5454545,3.9230769,.92307693,1.6923077,25,49,60
+,unemp,labor,1,0,1.1111112,.22222222,.055555556,25,,60
+,unemp,labor,1.12,4.0833335,8.8571424,2.2857144,1.3571428,25,,60
+unemp,unemp,self emp,1,0,0,0,0,25,25,55
+unemp,unemp,self emp,1.12,20,10,1.5,1,25,25,55
+labor,unemp,self emp,1,0,0,0,.16666667,25,60,55
+labor,unemp,self emp,1.12,14.2,25,2.3333333,3.3333333,25,60,55
+self emp,unemp,self emp,1,0,0,0,0,25,55,55
+self emp,unemp,self emp,1.12,10,20,3,2.6666667,25,55,55
+owner,unemp,self emp,1,0,0,0,0,25,75,55
+owner,unemp,self emp,1.12,12.5,13.333333,2.6666667,4,25,75,55
+farmer,unemp,self emp,1,0,0,.60000002,.60000002,25,32,55
+farmer,unemp,self emp,1.12,11,11.666667,2.5,3.5,25,32,55
+student,unemp,self emp,1.12,10,15,1.3333334,0,25,49,55
+,unemp,self emp,1,0,0,.13333334,.26666668,25,,55
+,unemp,self emp,1.12,10.625,10.9,1.3,2.0999999,25,,55
+self emp,unemp,owner,1.12,11,25,2,3,25,55,75
+owner,unemp,owner,1.12,1,10,2,3,25,75,75
+student,unemp,owner,1,0,0,0,0,25,49,75
+,unemp,owner,1,0,0,.33333334,0,25,,75
+,unemp,owner,1.12,15,.5,1.5,1,25,,75
+student,unemp,soldier,1.12,,0,0,0,25,49,62
+unemp,unemp,farmer,1,0,2.4285715,0,.85714287,25,25,32
+unemp,unemp,farmer,1.12,10,1,1,1,25,25,32
+self emp,unemp,farmer,1,0,0,0,0,25,55,32
+owner,unemp,farmer,1,0,0,0,0,25,75,32
+farmer,unemp,farmer,1,1.3461539,1,.064516127,.19354838,25,32,32
+farmer,unemp,farmer,1.12,9.5714283,8.6428576,1.7142857,1.8571428,25,32,32
+retired,unemp,farmer,1,0,0,0,0,25,49,32
+,unemp,farmer,1,.84848487,1.1764706,.11764706,.23529412,25,,32
+,unemp,farmer,1.12,10,6.8333335,2,2.6666667,25,,32
+unemp,unemp,retired,1,0,0,0,0,25,25,49
+unemp,unemp,retired,1.12,0,0,5,5,25,25,49
+labor,unemp,retired,1,0,0,0,0,25,60,49
+labor,unemp,retired,1.12,8.5555553,7.3636365,1.8181819,1,25,60,49
+self emp,unemp,retired,1,0,0,0,0,25,55,49
+self emp,unemp,retired,1.12,5,5,1.5,.5,25,55,49
+owner,unemp,retired,1.12,10,11,2,1,25,75,49
+farmer,unemp,retired,1,2.5,2.5,1.125,0,25,32,49
+farmer,unemp,retired,1.12,9,6,2.2,1.6,25,32,49
+student,unemp,retired,1,0,0,0,0,25,49,49
+retired,unemp,retired,1,0,0,0,0,25,49,49
+retired,unemp,retired,1.12,2,3.2,2,1,25,49,49
+,unemp,retired,1,.24137931,.60606062,.12121212,.12121212,25,,49
+,unemp,retired,1.12,8.416667,9.9285717,1.6428572,2.0714285,25,,49
+unemp,unemp,,1,.91954023,,.22580644,,25,25,
+unemp,unemp,,1.12,10.642858,,1.8666667,,25,25,
+labor,unemp,,1,.40625,,.06666667,,25,60,
+labor,unemp,,1.12,5.0588236,1,1.1578947,5,25,60,
+self emp,unemp,,1,1.1764706,,.33333334,,25,55,
+self emp,unemp,,1.12,8.727273,,1.4285715,,25,55,
+owner,unemp,,1,0,,0,,25,75,
+owner,unemp,,1.12,9,,2,,25,75,
+soldier,unemp,,1.12,0,,1.5,,25,62,
+farmer,unemp,,1,.85039371,,.26428571,,25,32,
+farmer,unemp,,1.12,7.4109588,,1.7763158,,25,32,
+student,unemp,,1,.3283582,,.15068494,,25,49,
+student,unemp,,1.12,4.5166669,,.884058,,25,49,
+retired,unemp,,1,.07692308,,.33333334,,25,49,
+retired,unemp,,1.12,6.375,,1.8,,25,49,
+,unemp,,1,1.0925111,,.25506073,,25,,
+,unemp,,1.12,7.1066666,,1.5384616,,25,,
+unemp,labor,unemp,1,0,0,0,0,60,25,25
+unemp,labor,unemp,1.12,,20,1,0,60,25,25
+labor,labor,unemp,1,2.2222223,.27272728,.18181819,.63636363,60,60,25
+labor,labor,unemp,1.12,12.6,15.125,2.3125,3.375,60,60,25
+self emp,labor,unemp,1,0,.33333334,0,0,60,55,25
+self emp,labor,unemp,1.12,8,5,2,2.5,60,55,25
+owner,labor,unemp,1,0,0,0,5,60,75,25
+owner,labor,unemp,1.12,10,5.5,1,0,60,75,25
+farmer,labor,unemp,1,0,0,1,.5714286,60,32,25
+farmer,labor,unemp,1.12,5.6363635,4.3846154,1.0769231,.69230771,60,32,25
+student,labor,unemp,1,0,0,0,0,60,49,25
+student,labor,unemp,1.12,6.6666665,10.25,1,1,60,49,25
+,labor,unemp,1,.06666667,0,.23529412,.29411766,60,,25
+,labor,unemp,1.12,9.1052628,7.9615383,1.8846154,1.6923077,60,,25
+unemp,labor,labor,1,0,0,0,0,60,25,60
+unemp,labor,labor,1.12,20,8,0,2,60,25,60
+labor,labor,labor,1,0,0,.2962963,.55555558,60,60,60
+labor,labor,labor,1.12,10.490566,10.847458,2.1355932,2.1355932,60,60,60
+self emp,labor,labor,1,0,0,0,0,60,55,60
+self emp,labor,labor,1.12,2,5,2.75,1.25,60,55,60
+owner,labor,labor,1.12,15,15,3,4,60,75,60
+farmer,labor,labor,1,0,0,0,.30000001,60,32,60
+farmer,labor,labor,1.12,6.6500001,9.939394,1.6969697,2.878788,60,32,60
+student,labor,labor,1,0,0,0,.16666667,60,49,60
+student,labor,labor,1.12,1.8947369,6.3333335,.81481481,2.5925925,60,49,60
+,labor,labor,1,.25,0,.12903225,.096774191,60,,60
+,labor,labor,1.12,7.7352943,10.144578,2.2771084,1.7590362,60,,60
+unemp,labor,self emp,1,0,0,0,0,60,25,55
+unemp,labor,self emp,1.12,4,0,3,1,60,25,55
+labor,labor,self emp,1,0,0,0,1,60,60,55
+labor,labor,self emp,1.12,12.307693,11.823529,1.8235294,1.8235294,60,60,55
+self emp,labor,self emp,1,0,0,0,0,60,55,55
+self emp,labor,self emp,1.12,17.5,11.25,3,2.5,60,55,55
+owner,labor,self emp,1.12,,25,0,0,60,75,55
+soldier,labor,self emp,1.12,,0,0,2,60,62,55
+farmer,labor,self emp,1,0,0,0,0,60,32,55
+farmer,labor,self emp,1.12,10,17.916666,2,3,60,32,55
+student,labor,self emp,1,0,0,0,0,60,49,55
+student,labor,self emp,1.12,2.5999999,6.1538463,.61538464,1.3076923,60,49,55
+,labor,self emp,1,0,0,.2173913,.13043478,60,,55
+,labor,self emp,1.12,11.785714,12.1875,2.21875,2.3125,60,,55
+labor,labor,owner,1.12,12,13.2,2.4000001,2.2,60,60,75
+self emp,labor,owner,1.12,0,.5,.5,2.5,60,55,75
+farmer,labor,owner,1,0,0,0,0,60,32,75
+farmer,labor,owner,1.12,,.5,1,3,60,32,75
+student,labor,owner,1.12,0,1.5,1,3,60,49,75
+,labor,owner,1,.83333331,2.3333333,.66666669,.16666667,60,,75
+,labor,owner,1.12,6.4000001,4.4166665,1.75,.75,60,,75
+labor,labor,soldier,1.12,4,5,3,5,60,60,62
+unemp,labor,farmer,1,0,0,0,0,60,25,32
+unemp,labor,farmer,1.12,10,5,.5,1.5,60,25,32
+labor,labor,farmer,1.12,12,7.3000002,1.5,1.8,60,60,32
+self emp,labor,farmer,1.12,,0,0,0,60,55,32
+owner,labor,farmer,1.12,2.5,5.25,2.75,1.25,60,75,32
+farmer,labor,farmer,1,0,0,.58333331,0,60,32,32
+farmer,labor,farmer,1.12,12.833333,9.416667,2.0833333,2.2916667,60,32,32
+student,labor,farmer,1.12,5,9.2222223,1.2222222,2.1111112,60,49,32
+,labor,farmer,1,0,0,0,0,60,,32
+,labor,farmer,1.12,7.875,15.388889,1.8823529,2.4444444,60,,32
+labor,labor,student,1,0,0,0,0,60,60,49
+labor,labor,student,1.12,0,0,1,1,60,60,49
+unemp,labor,retired,1.12,25,10,5,2,60,25,49
+labor,labor,retired,1,0,0,.60606062,.42424244,60,60,49
+labor,labor,retired,1.12,7.6086955,5.9230771,2.1538463,1.9230769,60,60,49
+self emp,labor,retired,1,0,0,.33333334,.83333331,60,55,49
+owner,labor,retired,1,0,0,0,0,60,75,49
+owner,labor,retired,1.12,11,5.1999998,2.2,2.5999999,60,75,49
+farmer,labor,retired,1,0,0,0,0,60,32,49
+farmer,labor,retired,1.12,16.666666,11.666667,3.3333333,3.3333333,60,32,49
+student,labor,retired,1.12,0,0,0,0,60,49,49
+,labor,retired,1,.25641027,.5,.40000001,.64999998,60,,49
+,labor,retired,1.12,8.772727,8,2.4615386,2.1153846,60,,49
+unemp,labor,,1,0,,.44444445,,60,25,
+unemp,labor,,1.12,10.166667,,1.75,,60,25,
+labor,labor,,1,.25316456,,.21951219,,60,60,
+labor,labor,,1.12,8.7207203,,2.2153847,,60,60,
+self emp,labor,,1,.1,,.60000002,,60,55,
+self emp,labor,,1.12,8.1764708,,1.6842105,,60,55,
+owner,labor,,1,0,,.2857143,,60,75,
+owner,labor,,1.12,6.7777777,,2,,60,75,
+soldier,labor,,1.12,2.75,,1.25,,60,62,
+farmer,labor,,1,.41666666,0,.46153846,0,60,32,
+farmer,labor,,1.12,8.71875,5,1.7446809,2,60,32,
+student,labor,,1,0,,.125,,60,49,
+student,labor,,1.12,6.1830988,,1.0973451,,60,49,
+retired,labor,,1,0,,0,,60,49,
+retired,labor,,1.12,0,,0,,60,49,
+,labor,,1,.27624309,0,.33668342,0,60,,
+,labor,,1.12,8.5222225,,1.9398148,,60,,
+unemp,self emp,unemp,1,.5714286,.5714286,0,0,55,25,25
+labor,self emp,unemp,1,0,0,0,0,55,60,25
+labor,self emp,unemp,1.12,13.666667,8.909091,.72727275,1.2727273,55,60,25
+self emp,self emp,unemp,1,0,0,0,0,55,55,25
+self emp,self emp,unemp,1.12,12.5,3,1.8571428,1.1428572,55,55,25
+owner,self emp,unemp,1,0,0,0,0,55,75,25
+owner,self emp,unemp,1.12,,3,0,0,55,75,25
+farmer,self emp,unemp,1,.68965518,.71875,.71875,.3125,55,32,25
+farmer,self emp,unemp,1.12,11.5,3.7777777,2.2777777,1.2777778,55,32,25
+student,self emp,unemp,1.12,,0,0,0,55,49,25
+retired,self emp,unemp,1.12,4,0,0,0,55,49,25
+,self emp,unemp,1,.37037036,0,.25,.035714287,55,,25
+,self emp,unemp,1.12,13.684211,9.045455,1.4090909,1.5909091,55,,25
+unemp,self emp,labor,1,0,0,0,0,55,25,60
+unemp,self emp,labor,1.12,10,14,1.5,1,55,25,60
+labor,self emp,labor,1,0,0,0,.2,55,60,60
+labor,self emp,labor,1.12,8.454545,10,2,2.25,55,60,60
+self emp,self emp,labor,1,0,0,0,0,55,55,60
+self emp,self emp,labor,1.12,9.666667,3.8,1.9,2.5,55,55,60
+owner,self emp,labor,1,0,0,2,2,55,75,60
+owner,self emp,labor,1.12,20,20,4,5,55,75,60
+farmer,self emp,labor,1,0,0,0,0,55,32,60
+farmer,self emp,labor,1.12,10.555555,13.230769,2.0769231,2.5384614,55,32,60
+student,self emp,labor,1,0,0,0,0,55,49,60
+student,self emp,labor,1.12,15.666667,10.166667,1.1666666,2,55,49,60
+,self emp,labor,1,.050000001,0,.13636364,.27272728,55,,60
+,self emp,labor,1.12,10.238095,10.75,2.0416667,2.875,55,,60
+unemp,self emp,self emp,1,0,0,0,0,55,25,55
+unemp,self emp,self emp,1.12,10,12.5,1.5,2,55,25,55
+labor,self emp,self emp,1,0,0,0,.14285715,55,60,55
+labor,self emp,self emp,1.12,9.166667,6.1666665,2.4444444,2.3888888,55,60,55
+self emp,self emp,self emp,1,0,0,.5,.60000002,55,55,55
+self emp,self emp,self emp,1.12,11.342857,10.342105,2.2631578,2.8421052,55,55,55
+owner,self emp,self emp,1,0,0,0,0,55,75,55
+owner,self emp,self emp,1.12,20,10.8,1.8,3.8,55,75,55
+farmer,self emp,self emp,1,0,0,.40000001,.30000001,55,32,55
+farmer,self emp,self emp,1.12,10.615385,10.555555,1.7777778,1.4074074,55,32,55
+student,self emp,self emp,1,0,0,0,0,55,49,55
+student,self emp,self emp,1.12,12.125,9.125,2.125,1.875,55,49,55
+,self emp,self emp,1,0,.015384615,.32307693,.58461541,55,,55
+,self emp,self emp,1.12,7.6393442,8.1641788,2.522388,2.4626865,55,,55
+unemp,self emp,owner,1,0,0,0,0,55,25,75
+labor,self emp,owner,1.12,7,16,3,5,55,60,75
+self emp,self emp,owner,1.12,7.1999998,13,2.2,2.2,55,55,75
+farmer,self emp,owner,1.12,5,0,3.5,2,55,32,75
+student,self emp,owner,1,0,0,0,0,55,49,75
+student,self emp,owner,1.12,10,5,1.5,1,55,49,75
+,self emp,owner,1,0,0,0,0,55,,75
+,self emp,owner,1.12,10.875,12.111111,2.8888888,2.1111112,55,,75
+unemp,self emp,farmer,1,7.5,5,1.5,0,55,25,32
+labor,self emp,farmer,1.12,0,0,0,0,55,60,32
+self emp,self emp,farmer,1,0,0,0,0,55,55,32
+self emp,self emp,farmer,1.12,9.1999998,8.6000004,3.2,2.5999999,55,55,32
+owner,self emp,farmer,1.12,,12,.5,1,55,75,32
+farmer,self emp,farmer,1,0,0,.2,.40000001,55,32,32
+farmer,self emp,farmer,1.12,12.307693,7.5294118,2,2.5294118,55,32,32
+,self emp,farmer,1,0,2.2222223,0,.44444445,55,,32
+,self emp,farmer,1.12,8.3999996,10,1.8,1,55,,32
+,self emp,student,1,0,0,2,0,55,,49
+unemp,self emp,retired,1,0,0,0,0,55,25,49
+labor,self emp,retired,1,0,0,0,0,55,60,49
+labor,self emp,retired,1.12,6.6666665,3,.71428573,1.8571428,55,60,49
+self emp,self emp,retired,1,1.6666666,1.25,.33333334,.91666669,55,55,49
+self emp,self emp,retired,1.12,7.375,6.8000002,2.3,2.5,55,55,49
+owner,self emp,retired,1,0,0,0,0,55,75,49
+owner,self emp,retired,1.12,10.2,13.2,3,3.2,55,75,49
+farmer,self emp,retired,1,0,0,0,0,55,32,49
+farmer,self emp,retired,1.12,30,10,2.5,.5,55,32,49
+student,self emp,retired,1.12,,0,0,0,55,49,49
+retired,self emp,retired,1,0,0,4,0,55,49,49
+retired,self emp,retired,1.12,20,0,5,0,55,49,49
+,self emp,retired,1,0,0,.11428571,.14285715,55,,49
+,self emp,retired,1.12,5.4827585,2.7333333,2.3333333,1.7666667,55,,49
+unemp,self emp,,1,0,,.14285715,,55,25,
+unemp,self emp,,1.12,18.333334,0,1.1666666,0,55,25,
+labor,self emp,,1,0,,0,,55,60,
+labor,self emp,,1.12,10.22,,1.9310344,,55,60,
+self emp,self emp,,1,0,,.18181819,,55,55,
+self emp,self emp,,1.12,7.3777776,20,1.9574468,5,55,55,
+owner,self emp,,1,0,,.2,,55,75,
+owner,self emp,,1.12,17.692308,,3.2857144,,55,75,
+farmer,self emp,,1,0,,.039999999,,55,32,
+farmer,self emp,,1.12,13.956522,,2.5818181,,55,32,
+student,self emp,,1,0,,.090909094,,55,49,
+student,self emp,,1.12,7.9642859,,1.4285715,,55,49,
+retired,self emp,,1,0,,0,,55,49,
+retired,self emp,,1.12,0,,2.5,,55,49,
+,self emp,,1,.0076923077,0,.21428572,0,55,,
+,self emp,,1.12,7.8211384,,2.1884058,,55,,
+labor,owner,unemp,1.12,0,0,2,1,75,60,25
+self emp,owner,unemp,1,0,0,0,0,75,55,25
+farmer,owner,unemp,1,0,0,0,0,75,32,25
+farmer,owner,unemp,1.12,5,5.3333335,1.6666666,1.6666666,75,32,25
+,owner,unemp,1,0,0,0,0,75,,25
+,owner,unemp,1.12,20,3,0,.5,75,,25
+labor,owner,labor,1,0,0,1.5,0,75,60,60
+labor,owner,labor,1.12,7.6666665,10,1.75,3,75,60,60
+self emp,owner,labor,1,0,0,0,1,75,55,60
+self emp,owner,labor,1.12,15,20,4,4,75,55,60
+owner,owner,labor,1.12,15,5,1,1.25,75,75,60
+farmer,owner,labor,1.12,0,0,0,0,75,32,60
+student,owner,labor,1.12,0,0,0,0,75,49,60
+,owner,labor,1,0,0,0,0,75,,60
+,owner,labor,1.12,9,7.3333335,2.5555556,1.2222222,75,,60
+unemp,owner,self emp,1,0,0,0,0,75,25,55
+labor,owner,self emp,1,,0,0,0,75,60,55
+labor,owner,self emp,1.12,20,17,2,4,75,60,55
+self emp,owner,self emp,1,0,0,0,0,75,55,55
+self emp,owner,self emp,1.12,6.6666665,7,1,3.3333333,75,55,55
+owner,owner,self emp,1.12,20,20,5,5,75,75,55
+farmer,owner,self emp,1,0,0,0,0,75,32,55
+farmer,owner,self emp,1.12,0,0,1,0,75,32,55
+student,owner,self emp,1.12,,0,1,0,75,49,55
+,owner,self emp,1,0,0,0,0,75,,55
+,owner,self emp,1.12,6.5714288,2.8571429,1.8571428,1.4285715,75,,55
+labor,owner,owner,1.12,.33333334,10.25,2,3.5,75,60,75
+owner,owner,owner,1.12,12.5,16,2,2.4000001,75,75,75
+student,owner,owner,1.12,10,40,3,3,75,49,75
+,owner,owner,1,0,0,5,0,75,,75
+,owner,owner,1.12,7,8.6000004,2.3,1.6,75,,75
+owner,owner,farmer,1.12,5,3,2.5,2,75,75,32
+farmer,owner,farmer,1,0,0,1,1.25,75,32,32
+farmer,owner,farmer,1.12,2.8,5,2,2.5,75,32,32
+,owner,farmer,1,0,0,0,0,75,,32
+,owner,farmer,1.12,11.5,14,1.2,3,75,,32
+labor,owner,retired,1,0,0,0,0,75,60,49
+labor,owner,retired,1.12,10,5,0,.5,75,60,49
+self emp,owner,retired,1,0,0,.5,0,75,55,49
+self emp,owner,retired,1.12,0,1,0,0,75,55,49
+owner,owner,retired,1,0,0,0,0,75,75,49
+owner,owner,retired,1.12,9.6000004,9.8000002,3,2.5999999,75,75,49
+farmer,owner,retired,1.12,0,0,0,0,75,32,49
+,owner,retired,1,0,0,0,.33333334,75,,49
+,owner,retired,1.12,7.25,4.6153846,2.7692308,2.6153846,75,,49
+unemp,owner,,1,0,,0,,75,25,
+labor,owner,,1,0,,0,,75,60,
+labor,owner,,1.12,9.75,,2.6956522,,75,60,
+self emp,owner,,1,0,,1,,75,55,
+self emp,owner,,1.12,12.6,,2.5999999,,75,55,
+owner,owner,,1,0,,0,,75,75,
+owner,owner,,1.12,15.05,,3.0434783,,75,75,
+soldier,owner,,1.12,20,,4,,75,62,
+farmer,owner,,1.12,12.6,,2,,75,32,
+student,owner,,1,0,,0,,75,49,
+student,owner,,1.12,0,,1,,75,49,
+,owner,,1,0,,.2631579,,75,,
+,owner,,1.12,6.7317071,0,2.2444444,5,75,,
+unemp,soldier,unemp,1,0,0,0,0,62,25,25
+labor,soldier,unemp,1,0,0,0,0,62,60,25
+farmer,soldier,unemp,1,0,0,0,0,62,32,25
+student,soldier,unemp,1.12,10,20,0,5,62,49,25
+,soldier,unemp,1.12,0,0,0,5,62,,25
+self emp,soldier,labor,1,0,0,0,0,62,55,60
+farmer,soldier,labor,1.12,,0,1,4,62,32,60
+student,soldier,labor,1.12,,1,1,1,62,49,60
+,soldier,labor,1.12,6,2,2.5,1,62,,60
+labor,soldier,self emp,1.12,20,20,1,0,62,60,55
+student,soldier,self emp,1,,0,0,0,62,49,55
+student,soldier,self emp,1.12,,20,0,2,62,49,55
+,soldier,self emp,1.12,,40,1,5,62,,55
+owner,soldier,owner,1.12,20,20,2,3,62,75,75
+student,soldier,owner,1.12,,5,0,0,62,49,75
+farmer,soldier,soldier,1.12,5,0,3,3,62,32,62
+,soldier,soldier,1,,0,1,0,62,,62
+,soldier,soldier,1.12,5,0,3,3,62,,62
+student,soldier,farmer,1,,0,0,0,62,49,32
+student,soldier,farmer,1.12,,8.333333,.66666669,1.6666666,62,49,32
+,soldier,retired,1,0,0,0,0,62,,49
+,soldier,retired,1.12,6.5,10.5,3,4,62,,49
+unemp,soldier,,1,0,,0,,62,25,
+labor,soldier,,1,,,,,62,60,
+labor,soldier,,1.12,6.8000002,,.5,,62,60,
+self emp,soldier,,1.12,,,,,62,55,
+owner,soldier,,1.12,20,,1,,62,75,
+soldier,soldier,,1.12,,,1,,62,62,
+farmer,soldier,,1,,,,,62,32,
+farmer,soldier,,1.12,,,0,,62,32,
+student,soldier,,1,,,,,62,49,
+student,soldier,,1.12,9,,.75,,62,49,
+retired,soldier,,1.12,0,,0,,62,49,
+,soldier,,1,0,,0,,62,,
+,soldier,,1.12,21.375,,2.4545455,,62,,
+unemp,farmer,unemp,1,1.8333334,2.8421052,.15789473,.2631579,32,25,25
+unemp,farmer,unemp,1.12,7,10,0,0,32,25,25
+labor,farmer,unemp,1,0,0,0,.14285715,32,60,25
+labor,farmer,unemp,1.12,8.666667,4.5,2.875,3,32,60,25
+self emp,farmer,unemp,1,6.6666665,0,1,.33333334,32,55,25
+self emp,farmer,unemp,1.12,.5,3.3333333,3.3333333,1.6666666,32,55,25
+owner,farmer,unemp,1,0,0,0,0,32,75,25
+owner,farmer,unemp,1.12,10,0,3,1.6666666,32,75,25
+farmer,farmer,unemp,1,.48816568,.43442622,.30874318,.21038251,32,32,25
+farmer,farmer,unemp,1.12,11.870503,8.2699385,2.2085888,1.7116565,32,32,25
+student,farmer,unemp,1,,0,0,0,32,49,25
+student,farmer,unemp,1.12,7.5,9.166667,.83333331,.83333331,32,49,25
+retired,farmer,unemp,1.12,0,15,3,2,32,49,25
+,farmer,unemp,1,1.725,1.5112782,.26865673,.33834586,32,,25
+,farmer,unemp,1.12,10.815789,10.534883,2.2093024,1.3488373,32,,25
+unemp,farmer,labor,1,0,0,0,0,32,25,60
+unemp,farmer,labor,1.12,,0,1,1,32,25,60
+labor,farmer,labor,1,0,0,0,0,32,60,60
+labor,farmer,labor,1.12,18,16.200001,3.3,2.8,32,60,60
+self emp,farmer,labor,1.12,20,30,5,0,32,55,60
+owner,farmer,labor,1.12,0,10,3,4,32,75,60
+farmer,farmer,labor,1,0,.02,.18000001,.36000001,32,32,60
+farmer,farmer,labor,1.12,11.808219,13.444445,2.1888888,2.5999999,32,32,60
+student,farmer,labor,1.12,7.9333334,10.130435,.95652175,1.9130435,32,49,60
+,farmer,labor,1,.64285713,.71428573,.10204082,.48979592,32,,60
+,farmer,labor,1.12,10.911765,9.7777777,2.2444444,3.0222223,32,,60
+unemp,farmer,self emp,1,0,0,.5,1.5,32,25,55
+unemp,farmer,self emp,1.12,20,20,4,3,32,25,55
+labor,farmer,self emp,1,0,0,0,0,32,60,55
+labor,farmer,self emp,1.12,13.2,14.4,1.8,2,32,60,55
+self emp,farmer,self emp,1,,0,0,0,32,55,55
+self emp,farmer,self emp,1.12,16.428572,4.125,2.25,4,32,55,55
+farmer,farmer,self emp,1,0,.27777779,.25,.27777779,32,32,55
+farmer,farmer,self emp,1.12,12,14.416667,1.75,2.4722223,32,32,55
+student,farmer,self emp,1,0,0,0,0,32,49,55
+student,farmer,self emp,1.12,5,6.25,1.0625,1.375,32,49,55
+,farmer,self emp,1,0,1.0526316,0,.15789473,32,,55
+,farmer,self emp,1.12,13.12,11.033334,1.8333334,1.8666667,32,,55
+labor,farmer,owner,1.12,15,11.666667,1.3333334,0,32,60,75
+self emp,farmer,owner,1,,0,0,0,32,55,75
+farmer,farmer,owner,1,0,0,0,0,32,32,75
+farmer,farmer,owner,1.12,13.25,20,2.4000001,3.8,32,32,75
+student,farmer,owner,1.12,10,20,0,4,32,49,75
+,farmer,owner,1,0,0,1.5,2,32,,75
+,farmer,owner,1.12,11.666667,11.666667,0,.83333331,32,,75
+,farmer,soldier,1.12,10,10,0,2,32,,62
+unemp,farmer,farmer,1,1.3333334,.88235295,.17647059,0,32,25,32
+unemp,farmer,farmer,1.12,1.5,2.5,4,4,32,25,32
+labor,farmer,farmer,1,0,0,.45454547,.72727275,32,60,32
+labor,farmer,farmer,1.12,14.1,11.833333,1.5,1.6666666,32,60,32
+self emp,farmer,farmer,1,3.3333333,2.3333333,1.3333334,1.6666666,32,55,32
+self emp,farmer,farmer,1.12,8.818182,14.666667,2.8333333,2.5,32,55,32
+owner,farmer,farmer,1,0,0,0,.5,32,75,32
+owner,farmer,farmer,1.12,6.75,7.9000001,2,1.7,32,75,32
+soldier,farmer,farmer,1.12,,6,1,5,32,62,32
+farmer,farmer,farmer,1,.17748918,.22535211,.27967808,.23541248,32,32,32
+farmer,farmer,farmer,1.12,11.553073,11.295612,1.9491917,2.3418014,32,32,32
+student,farmer,farmer,1.12,3.5263157,10.807693,.96153843,2.2692308,32,49,32
+retired,farmer,farmer,1.12,1,5,5,5,32,49,32
+,farmer,farmer,1,1.2573839,1.2671756,.13740458,.083969466,32,,32
+,farmer,farmer,1.12,9.7237568,10.704433,1.8078818,2.182266,32,,32
+unemp,farmer,retired,1,0,0,0,0,32,25,49
+labor,farmer,retired,1,0,0,0,0,32,60,49
+labor,farmer,retired,1.12,13.666667,6.6666665,3.3333333,2.3333333,32,60,49
+owner,farmer,retired,1.12,0,13,2,1,32,75,49
+farmer,farmer,retired,1,.33333334,.5,.40000001,0,32,32,49
+farmer,farmer,retired,1.12,10.428572,10,2.4285715,1.8571428,32,32,49
+student,farmer,retired,1.12,10,.5,0,0,32,49,49
+retired,farmer,retired,1.12,0,0,5,0,32,49,49
+,farmer,retired,1,0,0,1.6666666,1.6666666,32,,49
+,farmer,retired,1.12,11.666667,3.5,2,1.2,32,,49
+unemp,farmer,,1,.42857143,,.47058824,,32,25,
+unemp,farmer,,1.12,7.625,,2,,32,25,
+labor,farmer,,1,0,,0,,32,60,
+labor,farmer,,1.12,9.666667,,2.2121212,,32,60,
+self emp,farmer,,1,0,,1.2,,32,55,
+self emp,farmer,,1.12,10.4,,2.1666667,,32,55,
+owner,farmer,,1,0,,.33333334,,32,75,
+owner,farmer,,1.12,15.705882,,3.1176472,,32,75,
+soldier,farmer,,1.12,10,,0,,32,62,
+farmer,farmer,,1,.18983051,0,.32826748,0,32,32,
+farmer,farmer,,1.12,10.767858,,2.0359898,,32,32,
+student,farmer,,1,0,,.12790698,,32,49,
+student,farmer,,1.12,6.159091,,1.018405,,32,49,
+retired,farmer,,1.12,17.5,,3.75,,32,49,
+,farmer,,1,.75925928,10,.17192982,0,32,,
+,farmer,,1.12,9.0618553,,1.6728972,,32,,
+student,student,unemp,1,0,0,.21428572,.5,49,49,25
+student,student,unemp,1.12,0,6.4000001,.53333336,1.6333333,49,49,25
+,student,unemp,1,0,0,.043478262,.2173913,49,,25
+,student,unemp,1.12,0,5.2916665,.16666667,1.2083334,49,,25
+student,student,labor,1,0,0,.043478262,.30434781,49,49,60
+student,student,labor,1.12,.10714286,7.1447368,.2631579,1.5131578,49,49,60
+,student,labor,1,0,0,.041666668,.125,49,,60
+,student,labor,1.12,0,6.3888888,.11111111,1.1111112,49,,60
+student,student,self emp,1,0,0,0,.375,49,49,55
+student,student,self emp,1.12,0,7.9268293,.24390244,2.1707318,49,49,55
+,student,self emp,1,0,0,.090909094,0,49,,55
+,student,self emp,1.12,0,2.6923077,.07692308,.92307693,49,,55
+student,student,owner,1,0,0,0,.33333334,49,49,75
+student,student,owner,1.12,0,9.2857141,0,2.1428571,49,49,75
+,student,owner,1,,0,.5,3,49,,75
+,student,owner,1.12,0,1,0,1.25,49,,75
+student,student,soldier,1.12,0,2,0,2,49,49,62
+farmer,student,farmer,1,0,0,0,0,49,32,32
+student,student,farmer,1,,5,0,1,49,49,32
+student,student,farmer,1.12,0,6.521739,.13043478,1.173913,49,49,32
+,student,farmer,1,,0,0,0,49,,32
+,student,farmer,1.12,0,8.3076925,.30769232,1.3076923,49,,32
+student,student,student,1,,0,0,.5,49,49,49
+student,student,student,1.12,,0,.5,2.75,49,49,49
+,student,student,1,,.0089285718,.037313432,.080357142,49,,49
+,student,student,1.12,,.16793893,.069182388,.1221374,49,,49
+farmer,student,,1.12,,,,,49,32,
+student,student,,1,0,,.0373444,,49,49,
+student,student,,1.12,.28389829,0,.17408907,1,49,49,
+,student,,1,0,0,.0302267,.043478262,49,,
+,student,,1.12,.43157893,.11111111,.073563218,.22222222,49,,
+unemp,retired,unemp,1,0,0,0,0,49,25,25
+labor,retired,unemp,1,0,0,.40000001,.60000002,49,60,25
+labor,retired,unemp,1.12,11.75,5.5,2,2.25,49,60,25
+self emp,retired,unemp,1,0,0,0,0,49,55,25
+owner,retired,unemp,1,0,0,0,0,49,75,25
+owner,retired,unemp,1.12,25,25,0,1,49,75,25
+farmer,retired,unemp,1,0,0,0,0,49,32,25
+farmer,retired,unemp,1.12,0,1,0,0,49,32,25
+retired,retired,unemp,1,0,0,0,0,49,49,25
+retired,retired,unemp,1.12,10.333333,11.75,1,1.25,49,49,25
+,retired,unemp,1,0,.05882353,.64705884,.41176471,49,,25
+,retired,unemp,1.12,9.8000002,2.1818182,2.090909,1.4545455,49,,25
+retired,retired,labor,1.12,10,10,3,2,49,49,60
+,retired,labor,1,0,0,0,0,49,,60
+,retired,labor,1.12,0,0,0,0,49,,60
+self emp,retired,self emp,1.12,20,0,3,0,49,55,55
+,retired,self emp,1.12,0,.5,1,2.5,49,,55
+labor,retired,farmer,1.12,20,20,0,0,49,60,32
+farmer,retired,farmer,1.12,0,0,0,0,49,32,32
+retired,retired,farmer,1.12,19,10.5,2.5,2.5,49,49,32
+,retired,farmer,1.12,5,10,1.5,2.5,49,,32
+unemp,retired,retired,1,2.1666667,3.3333333,0,1.3333334,49,25,49
+unemp,retired,retired,1.12,10,9,0,0,49,25,49
+labor,retired,retired,1,0,0,0,.19047619,49,60,49
+labor,retired,retired,1.12,8.8064518,5.2647057,1.8529412,1.5294118,49,60,49
+self emp,retired,retired,1,0,0,1.2857143,.85714287,49,55,49
+self emp,retired,retired,1.12,15.777778,10.444445,.8888889,.77777779,49,55,49
+owner,retired,retired,1,0,0,1.6666666,1.6666666,49,75,49
+owner,retired,retired,1.12,5.5714288,3.6666667,1,.8888889,49,75,49
+soldier,retired,retired,1.12,,10,1,2,49,62,49
+farmer,retired,retired,1,0,0,0,0,49,32,49
+farmer,retired,retired,1.12,9.7142859,6.4285712,1.8571428,.14285715,49,32,49
+student,retired,retired,1.12,0,0,0,0,49,49,49
+retired,retired,retired,1,1.3461539,1.25,.10714286,.17857143,49,49,49
+retired,retired,retired,1.12,4.3636365,2.1851852,2,.55555558,49,49,49
+,retired,retired,1,.9518072,.81818181,.17045455,.19318181,49,,49
+,retired,retired,1.12,5.6712327,3.9871795,1.9615384,1.1153846,49,,49
+unemp,retired,,1,0,,.15384616,,49,25,
+unemp,retired,,1.12,7.1666665,,2.3333333,,49,25,
+labor,retired,,1,.1,,.15000001,,49,60,
+labor,retired,,1.12,7.8709679,10,2.3939395,0,49,60,
+self emp,retired,,1,0,,.083333336,,49,55,
+self emp,retired,,1.12,2.875,,1.5555556,,49,55,
+owner,retired,,1,0,,0,,49,75,
+owner,retired,,1.12,4.1999998,,2.6500001,,49,75,
+farmer,retired,,1,.083333336,,0,,49,32,
+farmer,retired,,1.12,15,,2,,49,32,
+student,retired,,1.12,1,,0,,49,49,
+retired,retired,,1,1.0704225,,.28,,49,49,
+retired,retired,,1.12,4.4505496,,1.6195652,,49,49,
+,retired,,1,.55303031,0,.27464789,2,49,,
+,retired,,1.12,6.2030077,,2.3185184,,49,,
+unemp,,unemp,1,,0,,.60000002,,25,25
+labor,,unemp,1,0,0,0,.23076923,,60,25
+labor,,unemp,1.12,2,9.5,1.6666666,2,,60,25
+self emp,,unemp,1,,0,0,0,,55,25
+owner,,unemp,1,0,0,0,0,,75,25
+owner,,unemp,1.12,,7.5,,2.5,,75,25
+soldier,,unemp,1.12,,9,,5,,62,25
+farmer,,unemp,1,1.2,0,.11111111,.032258064,,32,25
+farmer,,unemp,1.12,0,6.1999998,1.6666666,1.6,,32,25
+student,,unemp,1,,0,0,0,,49,25
+student,,unemp,1.12,.5,3.5999999,.80000001,1.1,,49,25
+retired,,unemp,1,,0,,5,,49,25
+,,unemp,1,0,.47317073,.090909094,.15121952,,,25
+,,unemp,1.12,.5,8.456954,.2,1.6666666,,,25
+unemp,,labor,1,,0,,0,,25,60
+unemp,,labor,1.12,,20,,5,,25,60
+labor,,labor,1,0,0,0,.33333334,,60,60
+labor,,labor,1.12,7.5,10.833333,1.5,2.1666667,,60,60
+self emp,,labor,1,,0,0,0,,55,60
+self emp,,labor,1.12,,14,0,2.8,,55,60
+owner,,labor,1.12,,5,0,2,,75,60
+farmer,,labor,1,,0,1,0,,32,60
+farmer,,labor,1.12,,12.857142,.5,2.0714285,,32,60
+student,,labor,1,0,0,0,.125,,49,60
+student,,labor,1.12,0,6.3913045,.77777779,2.0434783,,49,60
+,,labor,1,0,.035842296,.125,.24372759,,,60
+,,labor,1.12,10,8.5802469,1.5714285,1.9793389,,,60
+unemp,,self emp,1.12,,10,1,1,,25,55
+labor,,self emp,1,0,0,0,.83333331,,60,55
+labor,,self emp,1.12,,16.666666,1,2.5,,60,55
+self emp,,self emp,1,,3.5,,1.5,,55,55
+self emp,,self emp,1.12,,29,,1.5,,55,55
+farmer,,self emp,1,,0,,1,,32,55
+farmer,,self emp,1.12,,10.666667,.75,2.5833333,,32,55
+student,,self emp,1,,0,1,.75,,49,55
+student,,self emp,1.12,4.5,11.428572,3,1.7142857,,49,55
+,,self emp,1,0,.033519555,0,.29608938,,,55
+,,self emp,1.12,,9.1030931,.40000001,2.1082475,,,55
+labor,,owner,1.12,,7.5,,4,,60,75
+self emp,,owner,1.12,10,10.5,5,3.5,,55,75
+farmer,,owner,1.12,,6,,0,,32,75
+student,,owner,1.12,,16.75,,1.5,,49,75
+,,owner,1,0,0,0,.42105263,,,75
+,,owner,1.12,0,8.8461542,.5,2.2115386,,,75
+,,soldier,1.12,,8.666667,,2.5,,,62
+unemp,,farmer,1,,0,,0,,25,32
+labor,,farmer,1,0,0,0,0,,60,32
+labor,,farmer,1.12,,0,,2,,60,32
+owner,,farmer,1,,0,,0,,75,32
+owner,,farmer,1.12,,15.5,,2,,75,32
+farmer,,farmer,1,,1.3461539,0,.23076923,,32,32
+farmer,,farmer,1.12,,14.333333,.75,2.1333334,,32,32
+student,,farmer,1,,0,0,0,,49,32
+student,,farmer,1.12,20,15,1.3333334,1.75,,49,32
+,,farmer,1,0,.4848485,.125,.11255411,,,32
+,,farmer,1.12,10,10.620438,.5,2.051095,,,32
+student,,student,1,,0,,0,,49,49
+student,,student,1.12,,0,,0,,49,49
+,,student,1,,0,,.057971016,,,49
+,,student,1.12,,.20779221,,.14285715,,,49
+unemp,,retired,1,,.33333334,,.33333334,,25,49
+unemp,,retired,1.12,,0,,0,,25,49
+labor,,retired,1,,0,0,0,,60,49
+labor,,retired,1.12,,5.1999998,,1.2,,60,49
+self emp,,retired,1,,0,0,0,,55,49
+self emp,,retired,1.12,5.5,8.6000004,1.6666666,.89999998,,55,49
+owner,,retired,1.12,,20,,0,,75,49
+farmer,,retired,1,0,0,0,0,,32,49
+farmer,,retired,1.12,,7.5,0,.25,,32,49
+student,,retired,1,,0,,0,,49,49
+student,,retired,1.12,0,0,0,0,,49,49
+retired,,retired,1,,2,,0,,49,49
+retired,,retired,1.12,,.25,,0,,49,49
+,,retired,1,8,.52290076,.66666669,.22900763,,,49
+,,retired,1.12,,4.4809523,,1.6142857,,,49
+unemp,,,1,0,,0,,,25,
+unemp,,,1.12,20,,.33333334,,,25,
+labor,,,1,0,,.2,,,60,
+labor,,,1.12,10,,1.25,,,60,
+self emp,,,1,.5,,.5,,,55,
+self emp,,,1.12,15.5,,2.25,,,55,
+owner,,,1,,,,,,75,
+owner,,,1.12,,,.5,,,75,
+soldier,,,1.12,,,,,,62,
+farmer,,,1,0,,0,,,32,
+farmer,,,1.12,11,,.63999999,,,32,
+student,,,1,0,,0,,,49,
+student,,,1.12,1.25,,.57575756,,,49,
+retired,,,1,0,,0,,,49,
+retired,,,1.12,0,,0,,,49,
+,,,1,1.4666667,0,.096774191,.42857143,,,
+,,,1.12,6.6666665,1.6666666,1.5,.66666669,,,
