@@ -328,7 +328,7 @@
     grid-auto-columns: 100%;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 1945px;
+  min-height: 1811px;
 }
 
 .u-section-2 .u-text-1 {
@@ -336,8 +336,8 @@
 }
 
 .u-section-2 .u-layout-wrap-1 {
-  margin-top: 10px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .u-section-2 .u-layout-cell-1 {

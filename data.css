@@ -5,35 +5,41 @@
 .u-section-1 .u-text-1 {
   margin-bottom: 39px;
 }.u-section-2 .u-sheet-1 {
-  min-height: 326px;
+  min-height: 312px;
 }
 
 .u-section-2 .u-image-1 {
-  width: 371px;
-  height: 321px;
-  margin: 3px auto 3px 373px;
+  width: 357px;
+  height: 294px;
+  margin: 3px auto 15px 373px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-image-1 {
+    height: 293px;
+  }
 }
 
 @media (max-width: 991px) {
   .u-section-2 .u-image-1 {
-    margin-left: 349px;
+    margin-left: 363px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-2 .u-image-1 {
-    margin-left: 169px;
+    margin-left: 183px;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-2 .u-sheet-1 {
-    min-height: 299px;
+    min-height: 298px;
   }
 
   .u-section-2 .u-image-1 {
     width: 340px;
-    height: 294px;
+    height: 279px;
     margin-left: 0;
   }
 }.u-section-3 .u-sheet-1 {
