@@ -343,12 +343,21 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-3 .u-text-2 {
+    margin-top: 20px;
+  }
+
   .u-section-3 .u-text-3 {
     margin-left: 105px;
   }
 
+  .u-section-3 .u-image-2 {
+    margin-top: 20px;
+  }
+
   .u-section-3 .u-text-5 {
     margin-left: 105px;
+    margin-top: 20px;
   }
 
   .u-section-3 .u-text-7 {
