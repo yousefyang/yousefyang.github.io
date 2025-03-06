@@ -44332,7 +44332,6 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-1 {
-  font-family: Crushed;
   margin: -53px auto 0 101px;
 }
 
@@ -44356,18 +44355,19 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-text-1 {
     margin-top: -53px;
     margin-left: 101px;
+    font-family: Lobster, display;
   }
 
   .u-header .u-menu-1 {
     margin-top: -32px;
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .u-header .u-menu-1 {
     margin-top: 20px;
   }
 }
+
 
  .u-footer {
   background-image: none;
