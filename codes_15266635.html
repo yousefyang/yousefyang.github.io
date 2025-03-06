@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content=""><meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="/nicepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="np://app.desktop.nicepage.com/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="np://app.desktop.nicepage.com/nicepage.js" defer=""></script>
+<meta name="generator" content="Nicepage 7.5.2, nicepage.com"></head>
+<body class="u-body u-xl-mode" data-style="blank" data-posts="" data-global-section-properties="{&quot;colorings&quot;:{&quot;light&quot;:[&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;],&quot;dark&quot;:[&quot;dark&quot;]}}" data-source="blank" data-lang="en" data-page-sections-style="[{&quot;name&quot;:&quot;blank&quot;}]" data-page-coloring-types="{&quot;light&quot;:[&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;],&quot;dark&quot;:[&quot;dark&quot;]}" data-page-category="&quot;Basic&quot;"><section class="u-clearfix u-block-6b96-1" custom-posts-hash="[]" data-style="blank" data-section-properties="{&quot;margin&quot;:&quot;none&quot;,&quot;stretch&quot;:true}" id="block-5" data-outline-name="Block 5" data-id="6b96">
+  <div class="u-clearfix u-sheet u-block-6b96-2"><p class="u-text u-text-default u-block-6b96-3">​library(networkreporting)<br>surname&lt;-c("zhu","wu","liu","sun","yang","zhou","zheng")&nbsp;&nbsp; #these are estimates for known populations, labels have to be same as in dataset. In this study, these known populations are people with different Chinese surnames.<br>totpu&lt;-c(66,88,232,64,94,79,39)&nbsp; ##total size of the above surnames in the population, which is the sampled University.<br>knownpop&lt;-data.frame(surname, totpu)<br>kp.vec &lt;- df.to.kpvec(knownpop, kp.var = "surname", kp.value = "totpu")&nbsp; #this converts the data frame to a vector of known populations<br>dat&lt;-read.csv("xxxxxx")&nbsp; ##read the dataset<br><br>#the codes below calculate network degrees<br>d.hat&lt;-kp.degree.estimator(survey.data = dat,known.popns = kp.vec, total.popn.size = 4117,missing="ignore")&nbsp; ##total.popn.size is the&nbsp;size of your target population, which in this case is the total size of the Chinese population at the sampled University.<br>d.hat[which(d.hat[]==0)]&lt;-5&nbsp; #manually recode to require that none has zero acquaintance. Everybody should have&nbsp;at least 5 acquaintance (realistically speaking)<br>dat$degree&lt;-d.hat &nbsp; #attach the calculated network degree back to the full dataset for subsequent analysis<br>library(ggplot2)<br>qplot(d.hat,binwidth=15,xlab="network degree")<br>validcheck&lt;-nsum.internal.validation(survey.data = dat, known.popns = kp.vec, total.popn.size = 4117,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missing="complete.obs",kp.method=T,killworth.se = T, return.plot=T)<br>&nbsp; validcheck$results<br>&nbsp; validcheck$plot&nbsp;&nbsp; #liu is an inaccurate estimate. This reproduces the first graph in&nbsp;figure 1<br><br>#if exclude liu:<br>&nbsp; surname&lt;-c("zhu","wu","sun","yang","zhou","zheng")<br>&nbsp; totpu&lt;-c(66,88,64,94,79,39)<br>&nbsp; knownpop&lt;-data.frame(surname, totpu)<br>&nbsp; kp.vec &lt;- df.to.kpvec(knownpop, kp.var = "surname", kp.value = "totpu")<br>&nbsp; d.hat&lt;-kp.degree.estimator(survey.data = dat,known.popns = kp.vec, total.popn.size = 4117,missing="ignore")<br>&nbsp; d.hat[which(d.hat[]==0)]&lt;-5&nbsp; #none has zero alter, at least 5<br>&nbsp; dat$degree&lt;-d.hat<br>&nbsp; validcheck&lt;-nsum.internal.validation(survey.data = dat, known.popns = kp.vec, total.popn.size = 4117,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missing="complete.obs",kp.method=T,killworth.se = T, return.plot=T)<br>&nbsp; validcheck$plot&nbsp;&nbsp;&nbsp; #this reproduces the second graph of figure 1<br>&nbsp;<br>#calculate the classic network scale-up method estimates. This reproduces the classic estimates in table 3.<br>xsize&lt;-nsum.estimator(survey.data=dat, d.hat.vals=d.hat, y.vals="christians", total.popn.size = 4117,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missing="complete.obs")<br>&nbsp;busize&lt;-nsum.estimator(survey.data=dat, d.hat.vals=d.hat, y.vals="buddhists", total.popn.size = 4117,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missing="complete.obs")<br>&nbsp;<br>##estimate the variance with bootstrap resampling. Specify your own weights.<br>library(surveybootstrap)<br>xboot&lt;-bootstrap.estimates(survey.design =~1, num.reps=300, estimator.fn="nsum.estimator",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bootstrap.fn="rescaled.bootstrap.sample", weights="totwt",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.hat.vals="degree", total.popn.size=4117,y.vals="christians",survey.data=dat,missing="complete.obs")<br>buboot&lt;-bootstrap.estimates(survey.design =~1, num.reps=300, estimator.fn="nsum.estimator",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bootstrap.fn="rescaled.bootstrap.sample", weights="burhowt", tx.rate=.33,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.hat.vals=d.hat, total.popn.size=4117,y.vals="buddhists",survey.data=dat,missing="complete.obs")</p></div>
+<style data-mode="XL" data-visited="true">@media (min-width: 1200px) {
+  .u-block-6b96-2 {
+    min-height: 400px;
+  }
+  .u-block-6b96-3 {
+    margin-bottom: 60px;
+    font-size: 0.875rem;
+  }
+}</style><style data-mode="LG">@media (max-width: 1199px) and (min-width: 992px) {
+  .u-block-6b96-2 {
+    min-height: 400px;
+  }
+  .u-block-6b96-3 {
+    margin-bottom: 60px;
+    font-size: 0.875rem;
+  }
+}</style><style data-mode="MD">@media (max-width: 991px) and (min-width: 768px) {
+  .u-block-6b96-2 {
+    min-height: 400px;
+  }
+  .u-block-6b96-3 {
+    margin-bottom: 60px;
+    font-size: 0.875rem;
+  }
+}</style><style data-mode="SM">@media (max-width: 767px) and (min-width: 576px) {
+  .u-block-6b96-2 {
+    min-height: 400px;
+  }
+  .u-block-6b96-3 {
+    margin-bottom: 60px;
+    font-size: 0.875rem;
+  }
+}</style><style data-mode="XS">@media (max-width: 575px) {
+  .u-block-6b96-2 {
+    min-height: 400px;
+  }
+  .u-block-6b96-3 {
+    margin-bottom: 60px;
+    font-size: 0.875rem;
+  }
+}</style></section>
+</body></html>
