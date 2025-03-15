@@ -44312,10 +44312,10 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
-.u-header .u-sheet-1 {
-  min-height: 249px;
+.u-header .u-image-1 {
+  min-height: 295px;
 }
-.u-header .u-sheet-2 {
+.u-header .u-sheet-1 {
   min-height: 98px;
 }
 
@@ -44337,8 +44337,8 @@ a.u-link.u-text-hover-grey-90:hover {
   font-size: 1.25rem;
 }
 @media (max-width: 1199px) {
-  .u-header .u-sheet-1 {
-    min-height: 205px;
+  .u-header .u-image-1 {
+    min-height: 239px;
   }
 }
 @media (max-width: 1199px) {
@@ -44348,8 +44348,8 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 991px) {
-  .u-header .u-sheet-1 {
-    min-height: 157px;
+  .u-header .u-image-1 {
+    min-height: 187px;
   }
 }
 @media (max-width: 991px) {
@@ -44362,8 +44362,8 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 767px) {
-  .u-header .u-sheet-1 {
-    min-height: 118px;
+  .u-header .u-image-1 {
+    min-height: 144px;
   }
 }
 @media (max-width: 767px) {
@@ -44376,12 +44376,12 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 575px) {
-  .u-header .u-sheet-1 {
-    min-height: 121px;
+  .u-header .u-image-1 {
+    min-height: 96px;
   }
 }
 @media (max-width: 575px) {
-  .u-header .u-sheet-2 {
+  .u-header .u-sheet-1 {
     min-height: 90px;
   }
 
