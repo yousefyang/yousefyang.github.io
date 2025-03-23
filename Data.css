@@ -11,24 +11,28 @@
 .u-section-2 .u-image-1 {
   width: 357px;
   height: 294px;
-  margin: 3px auto 15px 373px;
+  margin: 0 410px 18px 373px;
 }
 
 @media (max-width: 1199px) {
   .u-section-2 .u-image-1 {
     height: 293px;
+    margin-right: 310px;
+    margin-left: 273px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-2 .u-image-1 {
-    margin-left: 363px;
+    margin-right: 200px;
+    margin-left: 163px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-2 .u-image-1 {
-    margin-left: 183px;
+    margin-right: 110px;
+    margin-left: 73px;
   }
 }
 
@@ -40,6 +44,7 @@
   .u-section-2 .u-image-1 {
     width: 340px;
     height: 279px;
+    margin-right: 0;
     margin-left: 0;
   }
 }.u-section-3 .u-sheet-1 {
