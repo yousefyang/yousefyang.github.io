@@ -2,7 +2,8 @@
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Xiaozhao Yousef Yang, replication codes, survey data, Gen-Z health behavior">
+    <meta name="keywords" content="sociology
+xiaozhao yang">
     <meta name="description" content="Medical Sociology and Population Health">
     <title>Data | Xiaozhao Y. Yang</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
@@ -18,20 +19,14 @@
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Lobster:wght@400">
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
-		"@type": "Person",
-		"name": "Xiaozhao Yousef Yang",
-		"url": "https://yousefyang.github.io",
-		"jobTitle": "Associate Professor",
-		"worksFor": {
-			"@type": "Organization",
-			"name": "Sun Yat-sen University"
-		}
+		"@type": "Organization",
+		"name": "Site1"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Data | Xiaozhao Y. Yang">
     <meta property="og:description" content="Medical Sociology and Population Health">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://yousefyang.github.io/Data.html">
+  <meta name="description" content="Research provides insights into population health with a focus on contextual and historical perspectives.">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="aQW7DtS0t4VNK-rGMVTzEUPHiYtqsLYlQXTG2gi-B38"> 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;a27b12bec2e34b4aa461b93690111b74&quot;}"></script><meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
@@ -127,4 +122,350 @@
         </a>
       </div></footer>
   
+
+<!-- ═══════════════════════════════════════════════════════
+     Stochastic Drift Simulator – inserted section
+     ═══════════════════════════════════════════════════════ -->
+<section class="u-clearfix u-block-drft-1" custom-posts-hash="[]" data-style="blank"
+  data-section-properties="{&quot;margin&quot;:&quot;none&quot;,&quot;stretch&quot;:true}"
+  id="block-drift" data-outline-name="Stochastic Drift Simulator" data-id="drft">
+  <div class="u-clearfix u-sheet u-block-drft-2">
+    <div class="drift-sim">
+
+      <h4 class="drift-sim__title">Stochastic Drift Simulator</h4>
+
+      <p class="drift-sim__intro">
+        The drift hypothesis of mental health contends that having psychiatric conditions leads people to drift down in social ladder and to end up in lower status. This hypothesis is cited, sometimes, to explain why the elite groups seem to have better mental health compared to proletariats and underclasses. However, there is another type of drifting, stochastic drift, that may purely randomly causes rare traits (such as psychiatric disorders) to disappear in small groups, and elite groups are usually small! I haven't seen this evolutionary mechanism being discussed by sociologists so far.
+        This simulation shows that in small communities, a trait can virtually disappear or become
+        universal purely by chance, with no selection or causal driver at all. Adjust the community
+        sizes and starting prevalence of a hypothetical disease, then click <strong>Run Simulation</strong>.
+      </p>
+
+      <div class="drift-sim__controls">
+        <div class="drift-sim__control-row">
+          <label class="drift-sim__label">
+            Community size — Group 1
+            <input class="drift-sim__input" type="number" id="drift-n1"
+              value="20" min="1" max="100000">
+          </label>
+          <label class="drift-sim__label">
+            Community size — Group 2
+            <input class="drift-sim__input" type="number" id="drift-n2"
+              value="200" min="1" max="100000">
+          </label>
+          <label class="drift-sim__label">
+            Initial prevalence of the trait (0 – 1)
+            <input class="drift-sim__input drift-sim__input--small" type="number" id="drift-p0"
+              value="0.15" min="0.001" max="0.999" step="0.01">
+          </label>
+        </div>
+        <div class="drift-sim__control-row">
+          <label class="drift-sim__label drift-sim__label--wide">
+            Number of generations: <strong id="drift-gen-label">5,000</strong>
+            <input class="drift-sim__slider" type="range" id="drift-ngen"
+              value="5000" min="1" max="20000" step="100">
+          </label>
+        </div>
+        <div class="drift-sim__control-row">
+          <button class="drift-sim__btn" id="drift-run-btn">Run Simulation</button>
+        </div>
+      </div>
+
+      <div class="drift-sim__canvases" id="drift-canvases" style="display:none;">
+        <div class="drift-sim__canvas-wrap">
+          <canvas id="drift-canvas-1" width="460" height="290"></canvas>
+        </div>
+        <div class="drift-sim__canvas-wrap">
+          <canvas id="drift-canvas-2" width="460" height="290"></canvas>
+        </div>
+      </div>
+
+      <p class="drift-sim__explanation" id="drift-explanation" style="display:none;">
+        <strong>What you are seeing:</strong> Each generation, members of the community independently
+        carry the trait with probability equal to the current prevalence. The next generation's
+        prevalence is simply the proportion who happen to carry it. In small communities, this stochastic process produces unstable swings; in larger communities, the prevalence stays more stable
+        near the starting value.
+      </p>
+
+    </div>
+  </div>
+
+  <style>
+    .drift-sim {
+      font-family: Georgia, 'Times New Roman', serif;
+      max-width: 980px;
+      margin: 36px auto 44px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .drift-sim__title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+      color: #222;
+    }
+    .drift-sim__intro {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #444;
+      margin: 0 0 20px 0;
+      max-width: 780px;
+    }
+    .drift-sim__controls {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      padding: 18px 20px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+    .drift-sim__control-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-end;
+      margin-bottom: 14px;
+    }
+    .drift-sim__control-row:last-child { margin-bottom: 0; }
+    .drift-sim__label {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.83rem;
+      color: #333;
+      gap: 5px;
+      flex: 1 1 160px;
+    }
+    .drift-sim__label--wide { flex: 1 1 100%; }
+    .drift-sim__input {
+      font-size: 1rem;
+      padding: 5px 8px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      background: #fff;
+      color: #222;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .drift-sim__input--small { max-width: 130px; }
+    .drift-sim__slider {
+      width: 100%;
+      accent-color: #4682b4;
+      cursor: pointer;
+      margin-top: 2px;
+    }
+    .drift-sim__btn {
+      background: #4682b4;
+      color: #fff;
+      border: none;
+      padding: 9px 26px;
+      font-size: 0.93rem;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+    }
+    .drift-sim__btn:hover { background: #305d8e; }
+    .drift-sim__canvases {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .drift-sim__canvas-wrap {
+      flex: 1 1 380px;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .drift-sim__canvas-wrap canvas {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 2px;
+    }
+    .drift-sim__explanation {
+      font-size: 0.88rem;
+      line-height: 1.68;
+      color: #444;
+      background: #f0f4f8;
+      border-left: 3px solid #4682b4;
+      padding: 14px 16px;
+      border-radius: 0 4px 4px 0;
+      max-width: 780px;
+    }
+  </style>
+</section>
+
+<script>
+(function () {
+  var slider    = document.getElementById('drift-ngen');
+  var genLabel  = document.getElementById('drift-gen-label');
+  var runBtn    = document.getElementById('drift-run-btn');
+  var canvasDiv = document.getElementById('drift-canvases');
+  var expEl     = document.getElementById('drift-explanation');
+
+  /* live-update the generation counter beside the slider */
+  slider.addEventListener('input', function () {
+    genLabel.textContent = Number(slider.value).toLocaleString();
+  });
+
+  /* ── simulation ──────────────────────────────────────── */
+  function nextPrevalence(N, p) {
+    if (p <= 0) return 0;
+    if (p >= 1) return 1;
+    if (N <= 200) {
+      /* exact binomial */
+      var count = 0;
+      for (var i = 0; i < N; i++) {
+        if (Math.random() < p) count++;
+      }
+      return count / N;
+    } else {
+      /* normal approximation (faster for large N) */
+      var u1 = Math.max(Math.random(), 1e-12);
+      var u2 = Math.random();
+      var z  = Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
+      var sd = Math.sqrt(p * (1 - p) / N);
+      return Math.min(1, Math.max(0, p + z * sd));
+    }
+  }
+
+  function simulate(N, p0, nGen) {
+    var freq = new Float32Array(nGen);
+    freq[0] = p0;
+    for (var t = 1; t < nGen; t++) {
+      freq[t] = nextPrevalence(N, freq[t - 1]);
+    }
+    return freq;
+  }
+
+  /* ── canvas rendering ────────────────────────────────── */
+  function drawChart(canvas, freqs, p0, N, nGen) {
+    var ctx   = canvas.getContext('2d');
+    var W     = canvas.width;   /* internal pixel dimensions */
+    var H     = canvas.height;
+    var padL  = 60, padR = 22, padT = 34, padB = 46;
+    var plotW = W - padL - padR;
+    var plotH = H - padT - padB;
+
+    ctx.clearRect(0, 0, W, H);
+
+    /* panel background */
+    ctx.fillStyle = '#fafafa';
+    ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(padL, padT, plotW, plotH);
+
+    /* horizontal grid lines + y-axis labels */
+    ctx.font         = '11px sans-serif';
+    ctx.textBaseline = 'middle';
+    ctx.textAlign    = 'right';
+    for (var v = 0; v <= 1.001; v += 0.25) {
+      var yp = padT + plotH * (1 - v);
+      ctx.fillStyle   = '#555';
+      ctx.fillText(v.toFixed(2), padL - 6, yp);
+      ctx.strokeStyle = '#e4e4e4';
+      ctx.lineWidth   = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, yp);
+      ctx.lineTo(padL + plotW, yp);
+      ctx.stroke();
+    }
+
+    /* x-axis tick labels */
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'top';
+    ctx.fillStyle    = '#555';
+    for (var xi = 0; xi <= 4; xi++) {
+      var xp  = padL + plotW * xi / 4;
+      var gen = Math.round(nGen * xi / 4);
+      var lbl = gen >= 1000
+        ? (gen % 1000 === 0 ? (gen / 1000) + 'k' : (gen / 1000).toFixed(1) + 'k')
+        : String(gen);
+      ctx.fillText(lbl, xp, padT + plotH + 6);
+    }
+
+    /* axes border */
+    ctx.strokeStyle = '#aaa';
+    ctx.lineWidth   = 1.2;
+    ctx.strokeRect(padL, padT, plotW, plotH);
+
+    /* dashed reference line at p0 */
+    var refY = padT + plotH * (1 - p0);
+    ctx.strokeStyle = '#bbb';
+    ctx.lineWidth   = 1;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(padL, refY);
+    ctx.lineTo(padL + plotW, refY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    /* "starting prevalence" label */
+    ctx.font         = '10px sans-serif';
+    ctx.fillStyle    = '#aaa';
+    ctx.textAlign    = 'right';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('starting prevalence', padL + plotW - 4, refY - 3);
+
+    /* x-axis title */
+    ctx.font         = '11px sans-serif';
+    ctx.fillStyle    = '#333';
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('Generation', padL + plotW / 2, H - 5);
+
+    /* y-axis title (rotated) */
+    ctx.save();
+    ctx.translate(14, padT + plotH / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.textBaseline = 'middle';
+    ctx.fillText('Prevalence of trait', 0, 0);
+    ctx.restore();
+
+    /* panel title */
+    ctx.font         = 'bold 13px sans-serif';
+    ctx.fillStyle    = '#222';
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText('Community size  N\u2009=\u2009' + N.toLocaleString(),
+      padL + plotW / 2, padT - 11);
+
+    /* simulation line — subsample for speed when many generations */
+    var step = Math.max(1, Math.floor(freqs.length / (plotW * 2)));
+    ctx.strokeStyle = '#4682b4';
+    ctx.lineWidth   = 1.5;
+    ctx.lineJoin    = 'round';
+    ctx.beginPath();
+    for (var t = 0; t < freqs.length; t += step) {
+      var xc = padL + plotW * t / (freqs.length - 1);
+      var yc = padT + plotH * (1 - freqs[t]);
+      if (t === 0) ctx.moveTo(xc, yc); else ctx.lineTo(xc, yc);
+    }
+    /* always include the very last point */
+    var xEnd = padL + plotW;
+    var yEnd = padT + plotH * (1 - freqs[freqs.length - 1]);
+    ctx.lineTo(xEnd, yEnd);
+    ctx.stroke();
+  }
+
+  /* ── run button ──────────────────────────────────────── */
+  runBtn.addEventListener('click', function () {
+    var N1   = Math.max(1, parseInt(document.getElementById('drift-n1').value)  || 20);
+    var N2   = Math.max(1, parseInt(document.getElementById('drift-n2').value)  || 200);
+    var p0   = parseFloat(document.getElementById('drift-p0').value) || 0.15;
+    p0       = Math.min(0.999, Math.max(0.001, p0));
+    var nGen = Math.max(2, parseInt(slider.value) || 5000);
+
+    var freq1 = simulate(N1, p0, nGen);
+    var freq2 = simulate(N2, p0, nGen);
+
+    canvasDiv.style.display = 'flex';
+    expEl.style.display     = 'block';
+
+    drawChart(document.getElementById('drift-canvas-1'), freq1, p0, N1, nGen);
+    drawChart(document.getElementById('drift-canvas-2'), freq2, p0, N2, nGen);
+  });
+})();
+</script>
 </body></html>
