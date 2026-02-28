@@ -135,7 +135,7 @@
       <h4 class="drift-sim__title">Stochastic Drift Simulator</h4>
 
       <p class="drift-sim__intro">
-        The drift hypothesis of mental health contends that having psychiatric conditions leads people to drift down in social ladder and to end up in lower status. This hypothesis is cited, sometimes, to explain why the elite groups seem to have better mental health compared to proletariats and underclasses. However, there is another type of drifting, stochastic drift, that may purely randomly causes rare traits (such as psychiatric disorders) to disappear in small groups, and elite groups are usually small! I haven't seen this evolutionary mechanism being discussed by sociologists so far.
+        The drift hypothesis of mental health contends that having psychiatric conditions leads people to drift down in social ladder and to end up in lower status. This hypothesis is cited, sometimes, to explain why the elite groups seem to have better mental health compared to proletariats and underclasses. However, there is another type of drifting, stochastic drift, that may purely randomly cause traits (such as psychiatric disorders) to disappear or fully blow in small groups, and elite groups are usually small! I haven't seen this evolutionary mechanism being discussed by sociologists so far.
         This simulation shows that in small communities, a trait can virtually disappear or become
         universal purely by chance, with no selection or causal driver at all. Adjust the community
         sizes and starting prevalence of a hypothetical disease, then click <strong>Run Simulation</strong>.
@@ -181,10 +181,9 @@
       </div>
 
       <p class="drift-sim__explanation" id="drift-explanation" style="display:none;">
-        <strong>What you are seeing:</strong> Each generation, members of the community independently
+        <strong>What you are seeing:</strong> The initial prevalence <i>p</i> means in a group of N people, p*N carry the trait. Each generation, the N people independently
         carry the trait with probability equal to the current prevalence. The next generation's
-        prevalence is simply the proportion who happen to carry it. In small communities, this stochastic process produces unstable swings; in larger communities, the prevalence stays more stable
-        near the starting value.
+        prevalence is simply the proportion who happen to carry it, given by the binomial probability of N choose N*p. In small communities, this stochastic process produces unstable swings; in larger communities, the prevalence stays more stable near the starting value.
       </p>
 
     </div>
