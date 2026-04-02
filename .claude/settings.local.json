@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(sort:*)",
-      "WebFetch(domain:yousefyang.github.io)"
+      "WebFetch(domain:yousefyang.github.io)",
+      "Bash(DEST=\"/c/Users/ii/Documents/GitHub/yousefyang.github.io/files\")",
+      "Bash(SRC=\"/c/Users/ii/OneDrive/Profession/publications\")",
+      "Bash(__NEW_LINE_9346bc75e7d64e57__ cp:*)",
+      "Bash(cp \"$SRC/Decomposing Immigrants\"*.pdf \"$DEST/DecomposingReligiousMobility.pdf\")",
+      "Bash(cp \"$SRC/Prevalenceandregionalcorrelatesofroad\"*.pdf \"$DEST/RoadTrafficInjuryChina.pdf\")"
     ]
   }
 }
